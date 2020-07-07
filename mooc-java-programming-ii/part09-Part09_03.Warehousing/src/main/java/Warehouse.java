@@ -11,9 +11,13 @@ public class Warehouse {
         } else {
             this.capacity = 0.0;
         }
-
         this.balance = 0.0;
     }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    
 
     public double getBalance() {
         return this.balance;
@@ -51,6 +55,7 @@ public class Warehouse {
         this.balance = this.balance - amount;
         return amount;
     }
+    
 
     public String toString() {
         return "balance = " + this.balance + ", space left " + howMuchSpaceLeft();
